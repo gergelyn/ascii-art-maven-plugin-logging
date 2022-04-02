@@ -1,0 +1,4 @@
+2022-04-02 15:42:22 [main] AsciiArtMojo.execute()
+INFO: choosenArtIndex: 1
+2022-04-02 15:42:22 [main] AsciiArtMojo.execute()
+INFO: choosenArtWithEnding: computerlove.txt
