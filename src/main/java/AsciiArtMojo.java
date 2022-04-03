@@ -19,8 +19,8 @@ public class AsciiArtMojo extends AbstractMojo {
     @Parameter(defaultValue = "${project}", required = true, readonly = true)
     MavenProject project;
 
-    @Parameter(property = "scope")
-    String scope;
+    @Parameter(property = "artName")
+    String artName;
 
     Map<String, String> arts = new HashMap<String, String>();
 
@@ -34,8 +34,8 @@ public class AsciiArtMojo extends AbstractMojo {
 
         String choosenArtWithEnding = "";
 
-        if (scope != null) {
-            choosenArtWithEnding = scope + ".txt";
+        if (artName != null) {
+            choosenArtWithEnding = artName + ".txt";
             Logger.info("choosenArtWithEnding: " + choosenArtWithEnding);
         } else {
             Random random = new Random();
